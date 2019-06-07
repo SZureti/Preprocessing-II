@@ -1,99 +1,59 @@
 // Navigation Styles here
 
-// header{
-//     display: flex;
-//     justify-content: center;
-//     align-content: center;
-
-//     .top {
-//         display: flex;
-//         justify-content: space-between;
-//         width: 800px;
-
-//         .header {
-//            width: 30%; 
-//         }
-//         nav {
-//             width: 50%;
-//         }
-//     }
-// }
-
-
-
-
-
-header {
+nav {
+  
+    // border: 3px solid red;
+    // border-bottom: 2px dashed silver;
+    width: 100%;
+    margin: 10px 0;
+    // height: max-content;
+    // padding: 15px 80px;
     display: flex;
-    // justify-content: center;
-    align-items: baseline;
-    // align-content: center;
-    // width: 100%;
+    justify-content: flex-end;
+    // justify-content: space-evenly;
+    align-items: center;
+    // border: 3px solid red;
+    
     @media @mobile {
-      flex-wrap: wrap;
-    //   flex-direction: column;
+        flex-direction: column;
+        
     }
-    .header {
-    //   order: -1;
-    //   display: block;
-    //   align-content: center;
-    display: flex;
-    width: 60%;
-    // } 
-    }
-    nav {
-        display: inline-block;
-        margin-left: 62px;
+    h1 {
+        justify-content: flex-start;
         width: 50%;
-        justify-content: flex-end;
-        a {
-            // float: right;
-            // justify-content: flex-end; 
-            // flex-direction: row;
-            // display: inline-block;
+        @media @mobile {
+            margin-bottom: 15px;
+            // border: 3px solid red;
         }
     }
-}
-
-
-
-// nav {
-//     // margin-left: 62px;
-//     // padding-bottom: 30px;
-//     width: 50%;
-//     display: flex;
-//     justify-content: flex-end;
-//     a {
-//    margin: 0 10px;
-//    display: flex;
-//    justify-content: flex-end;
-//    @media @mobile {
-//         width: 100%;
-//         // .center-nav();
-//         justify-content: space-between;
-//         // display: block;
-//         margin:0 50px;
-//         // padding: 0;
-//    }
-// }
-// }
-    // a {
-    //     // float: right;
-    //     margin-left: 0px;
-    //     font-size: 2rem;
-    //     color: black;
-    //     text-decoration: none;
-
-    //     @media @mobile {
-    //         width: 100%;
-    //         justify-content: space-between;
-    //     }
-    // }
-        // .first-anchor {
-        //     margin-right: 50%;
-        // }
+    div {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        // justify-content: flex-end;
+        // border: 3rem solid red;
+        @media @mobile {
+            flex-direction: row;
+            justify-content: space-around;
+            // border: 3px solid red;
+            align-items: center;
+            width: 100%;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.5rem;
+            word-spacing: 5px;
+        }
         header nav a:hover {
             text-decoration: underline;
             color: rgb(rgb(21, 129, 97));
         }
-      
+    }
+}
+
+header {
+    // width: 100%;
+    border-top: 2px dashed silver;
+}
