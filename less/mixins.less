@@ -21,12 +21,23 @@
 }
 
 .center-nav(){
-    width: 610px;
+    width: 100%;
     padding: 0 30px;
     justify-content: space-between;
     display: flex;
 }
 
-.mobile-nav(){
-    padding: 0 30px;
+//Parametric Animation 
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
 }
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
+
