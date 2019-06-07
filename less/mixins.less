@@ -1,1 +1,32 @@
 // Mixins in here
+
+.center (){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//custom-layout
+
+.custom-layout(@j, @a) {
+    display: flex;
+    justify-content: @j;
+    align-items: @a;
+}
+
+.custom-button(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-nav(){
+    width: 610px;
+    padding: 0 30px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.mobile-nav(){
+    padding: 0 30px;
+}
